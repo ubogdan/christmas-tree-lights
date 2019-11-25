@@ -6,17 +6,33 @@ Hardware
 
 ![Schematic](/images/schematic.png?raw=true)
 
-![Printed Circuit](/images/components.png?raw=true)
+#### Requirements
+ * 1x ESP8266 (D1 Mini) 
+ * 1x WS2812b/SK6812 LED Strip or "_Neopixel_" LED Strip
+ * 1x 74HCT08 Quad AND gate 
+ * 4x 100nF capacitor
+ * 1x 1N4148 diode or similar
+ * 1x 400ohm rezistor
 
-![Printed Circuit](/images/printedcircuit.png?raw=true)
+This is printed circuit preview.  
 
-Libraries
+![Printed Circuit ](/images/components.png?raw=true)
+
+The project includes the [board](/eagle/schematic.brd) and [schematic](/eagle/schematic.sch) for Eagle CAD. You may 
+need to download the following library if you want to edit the cad files.
+
  * [ESP8266 Eagle Library](https://github.com/wvanvlaenderen/ESP8266-Eagle_Library) used in schematic.
 
 Software
 ========
+I'm going to use Arduino as programing 
 
 Libraries
-  * [NeoPixelBus](https://github.com/Makuna/NeoPixelBus) handle comuncation with WS2812 led strip
+  * NeoPixelBus https://github.com/Makuna/NeoPixelBus
+  * ESP8266WiFi https://github.com/esp8266/Arduino
+  * WiFiManager, https://github.com/tzapu/WiFiManager
+  * ESP8266mDNS.h, https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266mDNS
+
+
  
  
