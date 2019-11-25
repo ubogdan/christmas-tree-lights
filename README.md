@@ -6,7 +6,7 @@ Hardware
 
 ![Schematic](/images/schematic.png?raw=true)
 
-![Printed Circuit](/images/componets.png?raw=true)
+![Printed Circuit](/images/components.png?raw=true)
 
 ![Printed Circuit](/images/printedcircuit.png?raw=true)
 
