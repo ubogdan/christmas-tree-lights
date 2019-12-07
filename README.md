@@ -23,6 +23,19 @@ need to download the following library if you want to edit the cad files.
 
  * [ESP8266 Eagle Library](https://github.com/wvanvlaenderen/ESP8266-Eagle_Library) used in schematic.
 
+#### Testing the hardware
+* Adjust the PixelCount from sketch with the number of leds of the strip you are going to use. 
+* Upload hardware-test.ino into d1 using Aduino.
+* The program should light up all leds in the follwing order Red , Green , Blue. In the event of Green si reversed with
+ Blue you shoud replace  
+```
+NeoPixelBus<NeoRgbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
+```
+with 
+```
+NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
+```
+
 Software
 ========
 I'm going to use Arduino as programing 

@@ -8,16 +8,14 @@
 const uint16_t PixelCount = 50; // this example assumes 4 pixels, making it smaller will cause a failure
 const uint8_t PixelPin = D5;  // make sure to set this to the correct pin, ignored for Esp8266
 
-#define colorSaturation 128
 
 NeoPixelBus<NeoRgbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
 
-RgbColor red(colorSaturation, 0, 0);
-RgbColor green(0, colorSaturation, 0);
-RgbColor blue(0, 0, colorSaturation);
-RgbColor yellow(colorSaturation, 50, 0);
-RgbColor white(colorSaturation);
-RgbColor black(0);
+#define saturation 128
+
+RgbColor red(saturation, 0, 0);
+RgbColor green(0, saturation, 0);
+RgbColor blue(0, 0, saturation);
 
 void setup()
 {
